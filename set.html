@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ルーレット設定</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>項目設定</h1>
+        
+        <div class="back-link">
+            <a href="index.html" class="back-button">← ルーレットに戻る</a>
+        </div>
+
+        <div class="spin-settings">
+            <h2>回転設定</h2>
+            <div class="setting-row">
+                <label for="durationInput">回転時間（秒）:</label>
+                <input type="number" id="durationInput" min="1" max="10" value="4">
+            </div>
+            <div class="setting-row">
+                <label for="spinsInput">回転数:</label>
+                <input type="number" id="spinsInput" min="1" max="10" value="5">
+            </div>
+        </div>
+
+        <div class="items-section">
+            <h2>項目リスト</h2>
+            <div id="itemsList" class="items-list"></div>
+            <button id="addItemBtn" class="add-button">項目を追加</button>
+        </div>
+    </div>
+
+    <script src="set.js"></script>
+</body>
+</html>
